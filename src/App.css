@@ -1,74 +1,63 @@
-body{
-margin:0;
-padding:0;
-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-font-family:Arial;
+body {
+  margin: 0;
+  font-family: Arial;
 
-/* Rotating Earth background */
-background-image:url("https://media.giphy.com/media/3o7btPCcdNniyf0ArS/giphy.gif");
-background-size:cover;
-background-position:center;
-background-repeat:no-repeat;
+  /* World map background */
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/8/80/World_map_-_low_resolution.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.container{
-text-align:center;
-background:rgba(255,255,255,0.9);
-padding:40px;
-border-radius:12px;
-width:350px;
-box-shadow:0 0 15px rgba(0,0,0,0.3);
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
 }
 
-.heading{
-color:black;
-margin-bottom:20px;
+.title {
+  background: rgba(24, 23, 23, 0.9);
+  padding: 10px 20px;
+  border-radius: 10px;
 }
 
-.searchBox{
-display:flex;
-justify-content:center;
-gap:10px;
-margin-bottom:20px;
+.searchBox {
+  margin-top: 20px;
 }
 
-input{
-padding:10px;
-width:180px;
-border-radius:6px;
-border:1px solid gray;
+input {
+  padding: 10px;
+  font-size: 16px;
+  width: 250px;
 }
 
-button{
-padding:10px 15px;
-background:#007bff;
-color:white;
-border:none;
-border-radius:6px;
-cursor:pointer;
-transition:0.3s;
+button {
+  padding: 10px 15px;
+  margin-left: 10px;
+  font-size: 16px;
+  cursor: pointer;
 }
 
-button:hover{
-background:#0056b3;
-transform:scale(1.1);
+.card {
+  margin-top: 30px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+  /* Black text */
+  color: black;
 }
 
-.card{
-margin-top:20px;
-color:black;
+.flag {
+  width: 120px;
+  margin-bottom: 10px;
 }
 
-.flag{
-width:120px;
-margin-bottom:10px;
-border-radius:5px;
-}
-
-.error{
-color:red;
-margin-top:10px;
+.error {
+  color: red;
+  margin-top: 15px;
 }
